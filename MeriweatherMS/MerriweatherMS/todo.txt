@@ -1,0 +1,164 @@
+-Lock route page
+-4Step jobs, need to translate materials 
+
+
+clickOnce: changing the Deployment Server
+1. Deploy application to new server.
+2. Run Mageui .exe and open up the .Application file (old server).
+3. On the name tab (old server), update the version to the same version you just deployed
+to the new server.
+4. Click on the Deployment options (old server), and update the Start Location to the
+new Server.
+5. Click on Application Reference and choose select manifest (old server)- navigate to
+the manifest on the new server and select it.
+6. Save - It will ask you your signing options - if you application is signed, simply
+choose the certificate that you are currently signing with (old server).
+The next time the users go to use the application, the update files will come from the new
+server location. After they pick up the updates from that new server location at least one
+time, the old server can be killed and the application will know to look for updates at the
+new server location.
+
+
+*** All reminder: Makesure Customer is Active!!
+Spring Reminder:
+Filter customer that has (Service.PropSeed > 0) OR (Service.PropFertilize > 0) OR 
+(Service.PropMow > 0) OR (Service.PropFourStep > 0) OR (Service.SpringServices <> ' ')
+
+UserPRofile
+	QBInvoiceDate
+	QBAccount
+	QBIntegration
+	ReportURL varchar500
+	
+CustomerJob
+	QBInvoiceID
+	QBIntemID
+	QBIntemIDB*
+	QBIntemIDC*
+	
+CustomerJob FourStepJob
+Service Notes
+CustomerJob FourStepMat
+
+
+Reports
+1.  Jobs by Customer - specify customer and date range
+2.  Pie chart on %Jobs types
+3.  Pivot on gross revenue:  jobtype, revenue, %of total
+4.   Monthly revenue: month, num of jobs,  hours, $, $pmh
+5. Jobs based on individual to include date, type, #of mow, man hrs, $, PMH
+6. Compliment report: date, emp, description , crew, job
+7. Complaint report: date, emp, description, crew, job, active
+
+todo:
+Change MulchType to Bit in Service TAble
+
+
+---punch list ---
+Joanne - Notes field for Schedule
+
+1) In the Job Comparison Report a lot of info is incorrect.  At a glance I could tell some of the numbers were obviously wrong so I exported a few of them to Excel and added them up - just about everything was wrong, some by a lot, some by a little.  This entire report is very important - it helps us figure out what prices to adjust - so it really needs to be 100% correct. 
+ 
+For Example, if you look at Pruning from 1/1/13 - 10/1/13 here are the differences:
+ 
+                                                               Crews         Jobs          Man hrs.              Revenue          Mat. Cost         Net Revenue
+Totals when exported to Excel and added with Autosum           59            185            1141.50           $57,618.00              $0                  $57,618.00
+Totals taken directly from Job Comparison report               49            187            1192.29           $61,297.55           $125.00            $61,172.55
+
+For Example, if you look at Pruning from 1/1/13 - 1/10/13 here are the differences:
+                                                               Crews         Jobs          Man hrs.              Revenue          Mat. Cost         Net Revenue
+Totals when exported to Excel and added with Autosum           59            185            1141.50           $57,618.00              $0                  $57,618.00
+Totals taken directly from Job Comparison report               49            187            1192.29           $61,297.55           $125.00            $61,172.55
+
+
+Once I saw that it got me to wondering if the Employee Performance Report was having the same problems (this is also super important because some of our year-end bonuses are based on it).  I tested out two employees (Johnathan Anthony and Tippy McDaniel) and all their info in the Employee Performance Report is correct.  However, it might be worth a few minutes to check and make sure there are no problems similar to what's going on with the Job Comparison report.
+ 
+2) This may be an anomaly (I hope it is) but on 5/17 employee CSe did a "Gutter" job for $75.00 and an "Other" job for $300.00.  However the work showed up in the Gutter Report instead of in the Other Report where it belongs.  Can you check into this to see what's going on - and -  to make sure there's not a more wide-spread problem.  
+ 
+3) Here's a biggie that will save us a bunch of time if you can make it work.  When we go to "Schedule", then highlight jobs, then click on "Set Status", can you get the total to automatically pop up in the "Total Cost (Revenue)" box?  The system knows that information since all prices have been entered before we reach this point.  This would save us from manually adding up a lot of numbers each day.
+ 
+4) We've had two employees this year named Shifflett - Chris and Vince.  In the Employee Performance Report they have two separate entries as they should have.  However, in the Employee Daily Work Log they are combined.  Chris worked 1/1 -  4/15, Vince worked all the dates after that.  All their work is shown in one report.  Note that there are two Shiffletts shown in the drop-down list but either one you click on gives you the same information - both guys combined info.  Going forward, there obviously needs to be a way for the system to differentiate between employees with the same last name.
+ 
+5) Can you create a new report for the contractors that performs the same function that the Employee Performance report performs for our employees?  At would give the all the Contractor's totals for a given date range.  Use all the same fields (Mow,  Other,  Ctr Mow ($),  Ctr Other ($),  Ctr. Total ($),  MMS ($)) as are used in the Contractor Daily Work Log.
+ 
+6) Can you make all drop-down lists automatically default to dropping down in alphabetical order, especially the drop down lists in the "Reports" section (unlike the other sections, there is no way to manually click the top of the list and get it to alphabetize).
+ 
+7) Another one for the "Reports" section.  Once we click on a name/job/whatever from a drop down list, can the report be called up at that point, thus skipping the need for the View Report button.  This is a needless extra step.
+ 
+
+
+<?xml version="1.0" ?> 
+<configuration>
+    <configSections>
+    </configSections>
+    <connectionStrings>
+        <add name="System.Windows.Forms.MMS.Properties.Settings.MMSConnectionString"
+            connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=MMSDB;Integrated Security=True"
+            providerName="System.Data.SqlClient" />
+        <add name="System.Windows.Forms.MMS.Properties.Settings.MMSConnectionString1"
+            connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=MMSDB;Integrated Security=True"
+            providerName="System.Data.SqlClient" />
+    </connectionStrings>
+</configuration>
+
+
+<?xml version="1.0" ?> 
+<configuration>
+    <configSections>
+    </configSections>
+    <connectionStrings>
+        <add name="System.Windows.Forms.MMS.Properties.Settings.MMSConnectionString"
+            connectionString="Data Source=192.168.1.5\SQLEXPRESS;Initial Catalog=MMSDB;User ID=sa;Password=stephen1;"
+            providerName="System.Data.SqlClient" />
+        <add name="System.Windows.Forms.MMS.Properties.Settings.MMSConnectionString1"
+            connectionString="Data Source=192.168.1.5\SQLEXPRESS;Initial Catalog=MMSDB;User ID=sa;Password=stephen1;"
+            providerName="System.Data.SqlClient" />
+    </connectionStrings>
+</configuration>
+
+
+4STep Feature
+-Add to Service - FourStepType1 - 4 (bits)
+-Add to CustomerJob - FourStepJob1 - 4 (bits)
+
+reset: 
+UPDATE    Service
+SET              FourStepType1 = 0, FourStepType2 = 0, FourStepType3 = 0, FourStepType4 = 0   (did we do this for reset?)
+FourStepDate1 = CAST(YEAR(GETDATE()) AS VARCHAR(4))  + '/01' + '/01',
+FourStepDate2 = CAST(YEAR(GETDATE()) AS VARCHAR(4))  + '/01' + '/01',
+FourStepDate3 = CAST(YEAR(GETDATE()) AS VARCHAR(4))  + '/01' + '/01',
+FourStepDate4 = CAST(YEAR(GETDATE()) AS VARCHAR(4))  + '/01' + '/01'
+
+Reports:
+Andy, right now the contractor reports (the ones we give them to show what we are paying for) merges customers with the same last name into one line.  In other words, if a contractor cuts 2 people with the last name Johnson, only one property is listed but the price is the 2 added together.  This causes a great deal of confusion with the contractors when we pay them; they think we are not paying them for all of their yards.  We also have customers with multiple yards and it combines them all into one line if they are cut on the same day.  We need each address to have its own line on this repor
+
+
+--- old Sprint Remider query
+SELECT DISTINCT 
+                 Customer.CustomerID, Customer.LastName, Customer.FirstName, Service.PropMow, Service.PropFourStep, Service.PropSeed, Service.PropFertilize, 
+                 Service.PropLime, Service.PropAeration, Service.SpringServices, Service.SummerServices, Service.FallServices, Service.WinterServices, Service.Cost, 
+                 Property.Address, Customer.City, Customer.State, Customer.Zip, Customer.AccountNumber, Customer.BusinessName, Customer.Active, 
+                 Property.GroupType
+FROM    Customer INNER JOIN
+                 Property ON Customer.CustomerID = Property.CustomerID INNER JOIN
+                 Service ON Property.PropertyID = Service.PropertyID
+WHERE  ((Customer.Active = 'True') AND 
+		((Service.SpringServices <> '0') OR 
+                ((Property.GroupType = 'InFrequent') AND (Service.Cost <> '0')) OR
+		(Service.PropSeed > 0) OR (Service.PropFertilize > 0) OR
+                (Service.PropMow > 0) OR (Service.PropFourStep > 0)))
+
+ORDER BY Customer.LastName
+
+
+--- 5/2/15
+Schedule tab, set to complete view, add more jobs via service view, select schedule tab and it is back to pending but list is complete.
+
+Charlottesville Waldorf School needs first/last name
+
+.............
+
+QB
+Joanne
+4Joanne!
+

@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D2DC0391-6729-4EA6-9101-A08AF7750254}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Windows.Forms.MMS</RootNamespace>
+    <AssemblyName>MeriweatherMS</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SignManifests>true</SignManifests>
+    <ManifestCertificateThumbprint>838255D7D9EEC8EF57B29489713FDDE66D612156</ManifestCertificateThumbprint>
+    <ManifestKeyFile>MeriweatherMS_TemporaryKey.pfx</ManifestKeyFile>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationIcon>mms1.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <TargetFrameworkProfile />
+    <StartupObject>System.Windows.Forms.MMS.Program</StartupObject>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <PublishUrl>\\jazz\Website\visitorintel\MMS\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://www.soundream.com/mms/</InstallUrl>
+    <UpdateUrl>http://jazz.soundream.com/mms/</UpdateUrl>
+    <ProductName>Meriweather Mowing System</ProductName>
+    <PublisherName>Meriweather</PublisherName>
+    <MinimumRequiredVersion>1.0.0.4</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>385</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataGridViewControls, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\DataGridViewControls.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtendedRichTextBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ExtendedRichTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core, Version=1.4.9.2, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.QBFC11, Version=11.0.0.29, Culture=neutral, PublicKeyToken=31d8aec643e18259">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Common Files\Intuit\QuickBooks\Interop.QBFC11.dll</HintPath>
+    </Reference>
+    <Reference Include="LoginControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\LoginControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="RKLib.ExportData, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\RKLib.ExportData.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\Customer.cs" />
+    <Compile Include="Components\GMapMarkerRect.cs" />
+    <Compile Include="Components\Invoice.cs" />
+    <Compile Include="Components\InvoiceItem.cs" />
+    <Compile Include="Components\Item.cs" />
+    <Compile Include="Components\Map.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ModelBase.cs" />
+    <Compile Include="Components\PersistWindowState.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\UserPreferences.cs" />
+    <Compile Include="Components\DGVPrinter.cs" />
+    <Compile Include="Data\MMSDataSet.cs">
+      <DependentUpon>MMSDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data\MMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddCrewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddCrewDialog.Designer.cs">
+      <DependentUpon>AddCrewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AssignCustomerTypeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AssignCustomerTypeDialog.Designer.cs">
+      <DependentUpon>AssignCustomerTypeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AssignRouteDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AssignRouteDialog.Designer.cs">
+      <DependentUpon>AssignRouteDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BonusDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BonusDialog.Designer.cs">
+      <DependentUpon>BonusDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ExportNewLetterCVS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ExportNewLetterCVS.Designer.cs">
+      <DependentUpon>ExportNewLetterCVS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ExportReminderCSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ExportReminderCSV.Designer.cs">
+      <DependentUpon>ExportReminderCSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapDialog.Designer.cs">
+      <DependentUpon>MapDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PrintLetterDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PrintLetterDialog.Designer.cs">
+      <DependentUpon>PrintLetterDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QBBatchInvoiceDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QBBatchInvoiceDialog.Designer.cs">
+      <DependentUpon>QBBatchInvoiceDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QBInvoiceDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QBInvoiceDialog.Designer.cs">
+      <DependentUpon>QBInvoiceDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StaticImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StaticImage.designer.cs">
+      <DependentUpon>StaticImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SelectDateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectDateDialog.Designer.cs">
+      <DependentUpon>SelectDateDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PreferencesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PreferencesDialog.Designer.cs">
+      <DependentUpon>PreferencesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForms\ReportJobSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\ReportJobSheet.Designer.cs">
+      <DependentUpon>ReportJobSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\SingleApplication.cs" />
+    <Compile Include="Forms\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateJobStatusDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateJobStatusDialog.Designer.cs">
+      <DependentUpon>UpdateJobStatusDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportData\ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportData\ImportForm.designer.cs">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LetterEditor\LetterTemplateFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LetterEditor\LetterTemplateFind.Designer.cs">
+      <DependentUpon>LetterTemplateFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LetterEditor\LetterTemplateReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LetterEditor\LetterTemplateReplace.Designer.cs">
+      <DependentUpon>LetterTemplateReplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\MMSUtility.cs" />
+    <Compile Include="ReportForms\ReportEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForms\ReportEmployeeForm.Designer.cs">
+      <DependentUpon>ReportEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Views\BaseView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CustomMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\CustomToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\HeaderRenderer.cs" />
+    <Compile Include="Components\TitleStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\CrewView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CrewView.Designer.cs">
+      <DependentUpon>CrewView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerView.Designer.cs">
+      <DependentUpon>CustomerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Spine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Spine.Designer.cs">
+      <DependentUpon>Spine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\BonusDialog.resx">
+      <DependentUpon>BonusDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExportReminderCSV.resx">
+      <DependentUpon>ExportReminderCSV.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QBBatchInvoiceDialog.resx">
+      <DependentUpon>QBBatchInvoiceDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QBInvoiceDialog.resx">
+      <DependentUpon>QBInvoiceDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CustomerJobReport4Step.rdlc" />
+    <EmbeddedResource Include="Reports\EmployeeList.rdlc" />
+    <EmbeddedResource Include="Forms\AssignCustomerTypeDialog.resx">
+      <DependentUpon>AssignCustomerTypeDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AssignRouteDialog.resx">
+      <DependentUpon>AssignRouteDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExportNewLetterCVS.resx">
+      <DependentUpon>ExportNewLetterCVS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapDialog.resx">
+      <DependentUpon>MapDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrintLetterDialog.resx">
+      <DependentUpon>PrintLetterDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectDateDialog.resx">
+      <DependentUpon>SelectDateDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StaticImage.resx">
+      <DependentUpon>StaticImage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateJobStatusDialog.resx">
+      <DependentUpon>UpdateJobStatusDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportData\ImportForm.resx">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LetterEditor\LetterTemplateFind.resx">
+      <DependentUpon>LetterTemplateFind.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LetterEditor\LetterTemplateReplace.resx">
+      <DependentUpon>LetterTemplateReplace.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ContractorJobReport.rdlc" />
+    <EmbeddedResource Include="Reports\Customer Property.rdlc" />
+    <EmbeddedResource Include="Reports\Customer Report.rdlc" />
+    <EmbeddedResource Include="Reports\CustomerJobReport.rdlc" />
+    <EmbeddedResource Include="Forms\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddCrewDialog.resx">
+      <DependentUpon>AddCrewDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PreferencesDialog.resx">
+      <DependentUpon>PreferencesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\ReportJobSheet.resx">
+      <DependentUpon>ReportJobSheet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForms\ReportEmployeeForm.resx">
+      <DependentUpon>ReportEmployeeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RevenueJobReport.rdlc" />
+    <EmbeddedResource Include="Reports\VendorList.rdlc" />
+    <EmbeddedResource Include="Views\BaseView.resx">
+      <DependentUpon>BaseView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CrewView.resx">
+      <DependentUpon>CrewView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerView.resx">
+      <DependentUpon>CustomerView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Spine.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Spine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EmployeeView.resx">
+      <DependentUpon>EmployeeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RoutingView.resx">
+      <DependentUpon>RoutingView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ServiceFourStepView.resx">
+      <DependentUpon>ServiceFourStepView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ServiceView.resx">
+      <DependentUpon>ServiceView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\VendorView.resx">
+      <DependentUpon>VendorView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoginView.resx">
+      <DependentUpon>LoginView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LetterView.resx">
+      <DependentUpon>LetterView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReportView.resx">
+      <DependentUpon>ReportView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ScheduleView.resx">
+      <DependentUpon>ScheduleView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Data\MMSDataSet.xsc">
+      <DependentUpon>MMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Data\MMSDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MMSDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\MMSDataSet.xss">
+      <DependentUpon>MMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\System.Windows.Forms.MMS.StockData.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Views\EmployeeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\EmployeeView.Designer.cs">
+      <DependentUpon>EmployeeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoutingView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\RoutingView.Designer.cs">
+      <DependentUpon>RoutingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ServiceFourStepView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ServiceFourStepView.Designer.cs">
+      <DependentUpon>ServiceFourStepView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ServiceView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ServiceView.Designer.cs">
+      <DependentUpon>ServiceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VendorView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\VendorView.Designer.cs">
+      <DependentUpon>VendorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\LoginView.Designer.cs">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LetterView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\LetterView.Designer.cs">
+      <DependentUpon>LetterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ReportView.Designer.cs">
+      <DependentUpon>ReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ScheduleView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ScheduleView.Designer.cs">
+      <DependentUpon>ScheduleView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Images\invoice.png" />
+    <None Include="Images\customer.png" />
+    <None Include="Images\invoice-blue.png" />
+    <Content Include="Graphics\binoc.ico" />
+    <Content Include="Graphics\bold.ico" />
+    <Content Include="Graphics\centre.ico" />
+    <Content Include="Graphics\copy.ico" />
+    <Content Include="Graphics\cut.ico" />
+    <Content Include="Graphics\delete.ico" />
+    <Content Include="Graphics\find_dc2.ico" />
+    <Content Include="Graphics\find_doc.ico" />
+    <Content Include="Graphics\font.ico" />
+    <Content Include="Graphics\font_big.ico" />
+    <Content Include="Graphics\font_sml.ico" />
+    <Content Include="Graphics\font_wid.ico" />
+    <Content Include="Graphics\help.ico" />
+    <Content Include="Graphics\help_ptr.ico" />
+    <Content Include="Graphics\italic.ico" />
+    <Content Include="Graphics\justify.ico" />
+    <Content Include="Graphics\left.ico" />
+    <Content Include="Graphics\lst2icon.ico" />
+    <Content Include="Graphics\mail.ico" />
+    <Content Include="Graphics\mail2.ico" />
+    <Content Include="Graphics\new.ico" />
+    <Content Include="Graphics\open.ico" />
+    <Content Include="Graphics\paste.ico" />
+    <Content Include="Graphics\print.ico" />
+    <Content Include="Graphics\print2.ico" />
+    <Content Include="Graphics\redo.ico" />
+    <Content Include="Graphics\refresh.ico" />
+    <Content Include="Graphics\right.ico" />
+    <Content Include="Graphics\save.ico" />
+    <Content Include="Graphics\toupper.ico" />
+    <Content Include="Graphics\underlne.ico" />
+    <Content Include="Graphics\undo.ico" />
+    <Content Include="Images\leftspine.PNG" />
+    <None Include="Images\materials.png" />
+    <None Include="Images\logo.PNG" />
+    <Content Include="Images\mms.ico" />
+    <Content Include="Images\mms1.ico" />
+    <Content Include="Images\Online.png" />
+    <None Include="Images\route.png" />
+    <None Include="Images\print-blue.png" />
+    <None Include="Images\quickbooks.png" />
+    <Content Include="Images\schedule.png" />
+    <None Include="Images\Service.png" />
+    <Content Include="Images\sound.png" />
+    <None Include="Images\tools.png" />
+    <None Include="Help\Meriweather System.mht">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="MeriweatherMS_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <Content Include="Images\SplashScreen.bmp" />
+    <Content Include="Images\trends.png" />
+    <Content Include="Images\orders.png" />
+    <Content Include="Images\graphs.png" />
+    <Content Include="Images\reports.png" />
+    <Content Include="Images\back.png" />
+    <Content Include="Images\bluefooter.bmp" />
+    <Content Include="Images\blueheader.bmp" />
+    <Content Include="Images\browse.png" />
+    <Content Include="Images\email.png" />
+    <Content Include="Images\forward.png" />
+    <Content Include="Images\help.png" />
+    <Content Include="Images\home.png" />
+    <Content Include="Images\updates.png" />
+    <Content Include="Images\more.png" />
+    <Content Include="Images\Splash.JPG" />
+    <Content Include="Graphics\mms.ico" />
+    <Content Include="mms1.ico" />
+    <Content Include="todo.txt" />
+    <Content Include="log.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Interop.QBFC11">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
