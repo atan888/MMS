@@ -1,2 +1,2 @@
 ﻿3/25/15
-Added new Column QBDescriptionA to CustomerJob Table
+Added new Column QBDescriptionA to CustomerJob Table 
