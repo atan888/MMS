@@ -1,0 +1,39 @@
+WHERE (Service.SpringServices <> '0') AND (Property.GroupType = 'InFrequent') 
+AND (Customer.Active = 'True') OR
+                 (Service.PropSeed > 0) OR
+                 (Service.PropFertilize > 0) OR
+                 (Service.PropMow > 0) OR
+                 (Service.PropFourStep > 0)
+
+----
+
+SELECT DISTINCT 
+                 Customer.CustomerID, Customer.LastName, Customer.FirstName, Service.PropMow, Service.PropFourStep, Service.PropSeed, Service.PropFertilize, 
+                 Service.PropLime, Service.PropAeration, Service.SpringServices, Service.SummerServices, Service.FallServices, Service.WinterServices, Service.Cost, 
+                 Property.Address, Customer.City, Customer.State, Customer.Zip, Customer.AccountNumber, Customer.BusinessName, Customer.Active, 
+                 Property.GroupType
+FROM    Customer INNER JOIN
+                 Property ON Customer.CustomerID = Property.CustomerID INNER JOIN
+                 Service ON Property.PropertyID = Service.PropertyID
+WHERE  ((Customer.Active = 'True') AND 
+		((Service.SpringServices <> '0') OR 
+                ((Property.GroupType = 'InFrequent') AND (Service.Cost <> '0')) OR
+		(Service.PropSeed > 0) OR (Service.PropFertilize > 0) OR
+                (Service.PropMow > 0) OR (Service.PropFourStep > 0)))
+
+
+SELECT        Customer.LastName, Customer.FirstName, Property.Address, CustomerJob.Type, CustomerJob.CrewKey, CustomerJob.Date, Service.FourStepType
+FROM            CustomerJob INNER JOIN
+                         Property ON CustomerJob.PropertyID = Property.PropertyID INNER JOIN
+                         Customer ON Property.CustomerID = Customer.CustomerID INNER JOIN
+                         Service ON Property.PropertyID = Service.PropertyID
+WHERE        (CustomerJob.FourStepJob = 'true')
+ORDER BY Customer.LastName, Customer.FirstName, CustomerJob.Date
+
+
+SELECT        Customer.LastName, Customer.FirstName, Property.Address, Service.FourStepType, CustomerJob.FourStepJob, CustomerJob.Date
+FROM            Customer INNER JOIN
+                         Property ON Customer.CustomerID = Property.CustomerID INNER JOIN
+                         Service ON Property.PropertyID = Service.PropertyID FULL OUTER JOIN
+                         CustomerJob ON Property.PropertyID = CustomerJob.PropertyID
+WHERE        (Customer.Active = 'true') AND (Property.Active = 'true') AND (Service.FourStepType = 'true') AND (CustomerJob.FourStepJob = 'true')

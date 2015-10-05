@@ -1,0 +1,21 @@
+Report on Crew: Job Date, job type, man hours, revenue, revenue/man hour
+Report on Total Revenue: job type, revenue generated, 
+
+
+Report on Total Jobs: job types, man hours, revenue, revenue crew, revenue
+
+Report on 
+
+Revenue per Crew
+Report on Revenue per Job
+Report on Revenu per Man Hours
+
+Revenue on Customer/Property, rank by Revenue generated
+Print Complements, association based on Crew member
+
+Add task: mowing, aeration, gutter, leaf, leaf, mulching, pruning, others
+
+
+
+
+

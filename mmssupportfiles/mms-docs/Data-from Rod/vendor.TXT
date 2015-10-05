@@ -1,0 +1,89 @@
+Salutation	First Name	M.I.	Last Name	Company Name	City	State	Zip	Country	Contact	Alt Contact	Address 1	Address 2	Address 3	Address 4	Shipping Address 1	Shipping Address 2	Shipping Address 3	Shipping Address 4	Shipping City	Shipping State	Shipping Zip	Shipping Country	
+					Columbus	GA	31999				Worlwide Headquarters	Columbus,Georgia	31999												
+											Al Strickler														
+				Alethia Curren	Charlottessville	VA	22903				One Boar's Head Lane Suite 2	Charlottessville,Virginia	22903												
+					Louisville	KY	40290-1099				P.O.Box 9001099	Louisville,Kentucky	40290-1099												
+					Richmond	VA	23285-5101				P.O.Box 85101	Richmond,Virginia	23285-5101												
+				Bish Bailey , Debbie	Charlottesville	VA	22903				914 Harris Street	Charlottesville,Virginia	22903												
+					Charlottesville		22901				1150 River Road	Charlottesville,Virgina	22901												
+					Stuarts Draft	VA	24477				2085 Stuarts Draft Highway	Stuarts Draft, Virginia	24477												
+					Christiansburg	VA	24073				3504 Mudpike Road	Christiansburg,Virginia	24073												
+					Ruckersville	VA	22968				US Hwy 29N	Ruckersville,Virginia	22968												
+					Charlottesville 		22903				946 Grady Ave #12	Charlottesville , Virgina	22903												
+					Charlotte	NC	28296-0064				P.O.Box 96064	Charlotte,NC	28296-0064												
+					Dallas	TX	75397-1327				P.O.Box 971327	Dallas,Texas	75397-1327												
+				Kevin Carson	Charlottesville	VA	22901				1195 Seminole Trail	Charlottesville,Virginia	22901												
+											Commisioner of Renue Greene County														
+				Johnny	Charlottesville	VA	22906				1726 Allied Street,P.O.Box 6096	Charlottesville,Virginia	22906												
+					Dallas	TX	75266-0834				P.O.Box 660834	Dallas,Texas	75266-0834												
+					Richmond	VA	23260-5819				P.O.Box 25850	Richmond,Virginia	23260-5819												
+	Don		Bobbitt	Charlottesville Accounting Service	Charlottesville	VA	22905		Don Bobbitt		Don Bobbitt	P.O.Box 4332	Charlottesville,Virginia 22905												
+					Stuarts Draft	VA	24477				P.O.Box 621	Stuarts Draft,Virginia	24477												
+					Standardsville	VA	22973				216 Mountain Crest Drive	Standardsville,Virginia	22973												
+					Carol Stream	IL	60197				P.O.Box 4450	Carol Stream IL	60197												
+				Jerry	Charlottesville	VA	22903				1615 Trailridge Road	Charlottesville,Virginia	22903												
+					Staunton	VA	24402-2246				P.O.Box 2246	Staunton,Virginia	24402-2246												
+					Stanardsville		22973				P.O.Box 157	Stanardsville,Virgina	22973												
+					Orange		22960				441 North Madison Street	Orange,Virgina	22960												
+					Louisville	KY	40285-6460				P.O.Box 856460	Louisville,KY	40285-6460												
+											Green County Treasurer														
+					Palmyra 	VA	22963				28 Chippewa Lane	Palmyra , Virginia	22963												
+					Barboursville	VA	22923				4642 Spotswood Trail	Barboursville,Virginia	22923												
+				Henry Goodwin	Kents Store		23084				3947 Venable Road	Kents Store,Virgina	23084												
+											INTUIT														
+											IRS														
+					Charlottesville		22901				570 Broomley Road	Charlottesville,Virgina	22901												
+					Louisa		23093				5836 Ellisville Drive	Louisa,Virgina	23093												
+					Keswick 	VA	22947				25 Glenmore Lane	Keswick , Virginia	22947												
+					Charlottesville	VA	22901				P.O.Box 7463 2150 Seminole Trail	Charlottesville,Virginia	22901												
+					Ivy	VA	22945				P.O.Box 167	Ivy,Virginia	22945												
+					Roanoke	VA	24027-2706				P.O. Box 12706	Roanoke,Virginia	24027-2706												
+				W.R.Goodman	Earlysville	VA	22936				760 Miller's Cottage Lane	Earlysville,Virginia	22936												
+					Atlanta	GA	30353-0970				P.O.Box 530970	Atlanta,Georgia	30353-0970												
+					Richmond		23242-0871				P.O.Box 29871	Richmond,Virgina	23242-0871												
+				Ray Carr Tire	Charlottesville	VA	22901				1176 River Road	Charlottesville,Virginia	22901												
+				Brian Hargett	Orange	VA	22960				P.O.Drawer 1070 164 Madison Road	Orange,Virginia	22960												
+				Gordon Merrick	Chicago	IL	60675-2483				P.O.Box 92483	Chicago IL	60675-2483												
+					Charlottesville	VA	22901				1118 Holmes Avenue	Charlottesville,Virginia	22901												
+				Davis Lawn Care	Earlysville	VA	22936				454 Future Oak Lane	Earlysville,Virginia	22936												
+					Newton.IA		50208-0927				1123 1st Avenue East P.O.Box 927	Newton.IA	50208-0927												
+					DesMoines	IA	50368-9020				Dept 56 4204504244 P.O.Box 689020	DesMoines,IA	50368-9020												
+					Orange	VA	22960-0346				P.O.Box 590	Orange,Virginia	22960-0346												
+				Steve Murray	Earlysville	VA	22936				300 Panorama Road	Earlysville,Virginia	22936												
+				Garrison's Landscaping	Scottsville	VA	24590				11075 South Constitiuition Rt	Scottsville,Virginia	24590												
+					Ivy 	VA	22945				P.O.Box 157	Ivy , Virginia	22945												
+					Earlysville	VA	22936				555 Eyre Road	Earlysville,Virginia	22936												
+				Louise Gallagher	Charlottesville	VA	22903				1223-1 Harris Street	Charlottesville,Virginia	22903												
+					Loiusville	KY	40285-6042				P.O.Box 856042	Loiusville,KY	40285-6042												
+											Postmaster														
+					Charlottesville		22901				1149 Seminole Trail	Charlottesville,Virgina	22901												
+					Alexandria	VA	22334				P.O.Box 34849	Alexandria,Virginia	22334												
+											Rod Ballard-Vendor														
+					Charlottesville	VA	22902-9016				695 Moore's Creek Lane	Charlottesville,Virginia	22902-9016												
+											Ryan Kirby														
+					Concord	NC	28026-1628				P.O.Box 1628	Concord,NC	28026-1628												
+											S. German														
+					Carol Stream	IL	60197-4558				P.O.Box 4558 Department 49	Carol Stream,IL	60197-4558												
+					Piney River.Virginia		22964				2508 Tye Brook Highway	Piney River.Virginia	22964												
+				Kevin	Charlottesville	VA	22903				824 Preston Avenue	Charlottesville,Virginia	22903												
+					Charlottesville	VA	22903				750 Harris Street Suite 208	Charlottesville,Virginia	22903												
+					Charlottesville	VA	22903				1108 Rose Hill Drive	Charlottesville,Virginia	22903												
+					Des Moines	IA	50368-9020				P.O.Box 689020	Des Moines,IA	50368-9020												
+					Richmond		23260-5819				P.O. Box 25819	Richmond,Virgina	23260-5819												
+				Hawes Spencer	Charlottesville	VA	22902				100 2nd Street NW	Charlottesville,Virginia	22902												
+					Valley Forge	PA	19496-9901				P.O.Box 876	Valley Forge,PA	19496-9901												
+				George Fitzhugh	Charlottesville	VA	22911					Charlottesville,Virginia	22911												
+					Charlottesville	VA	22901				2820 Hydraulic Rd Suite #1	Charlottesville,Virginia	22901												
+					Lehigh Valley	PA	180002-5505				P.O.Box 25505	Lehigh Valley,PA	180002-5505												
+					Atlanta	GA	31139				P.O.Box 723026	Atlanta,Georgia	31139												
+					Richmond	VA	23261-7264				P.O.Box 27264	Richmond,Virginia	23261-7264												
+											Virginia Employment Commission														
+					Charlottesville	VA	22903				2415 Ivy Road	Charlottesville,Virginia	22903												
+					Tampa	FL	33630-3131				VISA	PO Box 30031	Tampa, FL 33630-3131												
+					Tampa	FL	33630-3131				VISA	PO Box 30131	Tampa, FL 33630-3131												
+					Tampa	FL	33630-3131				P.O.Box 30131	Tampa,FL	33630-3131												
+				A Patch of Heaven LLC	Charlottesville 	VA	22901				2525 Lake Albemarle Road	Charlottesville , Virginia	22901												
+					Waynesboro	VA	22980				1022 West Main Street P.O.Box 1244	Waynesboro,Virginia	22980												
+					Charlottesville	VA	22902				503 Market Street	Charlottesville,Virginia	22902												
+					King of Prussia	PA	19406-9300				2560 Renaissance Blvd	King of Prussia PA	19406-9300												
+					Earlysville	VA	22936				5021 Advance Mills Road	Earlysville,Virginia	22936												
